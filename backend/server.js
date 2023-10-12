@@ -30,7 +30,6 @@ app.get('/sopran_1', (req, res) => {
     db.query(sql, (err, field) => {
         if (err)throw err
         let result = [];
-        // res.json(field[0].nama)
        for (let i = 0; i < field.length; i++){
         result[i] = field[i].nama;
        }
@@ -45,7 +44,6 @@ app.get('/sopran_2', (req, res) => {
     db.query(sql, (err, field) => {
         if (err)throw err
         let result = [];
-        // res.json(field[0].nama)
        for (let i = 0; i < field.length; i++){
         result[i] = field[i].nama;
        }
@@ -60,7 +58,6 @@ app.get('/alto_1', (req, res) => {
     db.query(sql, (err, field) => {
         if (err)throw err
         let result = [];
-        // res.json(field[0].nama)
        for (let i = 0; i < field.length; i++){
         result[i] = field[i].nama;
        }
@@ -75,7 +72,6 @@ app.get('/alto_2', (req, res) => {
     db.query(sql, (err, field) => {
         if (err)throw err
         let result = [];
-        // res.json(field[0].nama)
        for (let i = 0; i < field.length; i++){
         result[i] = field[i].nama;
        }
@@ -90,7 +86,6 @@ app.get('/tenor_1', (req, res) => {
     db.query(sql, (err, field) => {
         if (err)throw err
         let result = [];
-        // res.json(field[0].nama)
        for (let i = 0; i < field.length; i++){
         result[i] = field[i].nama;
        }
@@ -105,7 +100,6 @@ app.get('/tenor_2', (req, res) => {
     db.query(sql, (err, field) => {
         if (err)throw err
         let result = [];
-        // res.json(field[0].nama)
        for (let i = 0; i < field.length; i++){
         result[i] = field[i].nama;
        }
@@ -120,7 +114,6 @@ app.get('/bass_1', (req, res) => {
     db.query(sql, (err, field) => {
         let result = [];
         if (err)throw err
-        // res.json(field[0].nama)
        for (let i = 0; i < field.length; i++){
         result[i] = field[i].nama;
        }
@@ -134,7 +127,6 @@ app.get('/bass_2', (req, res) => {
     db.query(sql, (err, field) => {
         if (err)throw err
         let result = [];
-        // res.json(field[0].nama)
        for (let i = 0; i < field.length; i++){
         result[i] = field[i].nama;
        }
@@ -158,7 +150,7 @@ app.post('/', express.json(), (req, res) => {
             }
         }
 
-        if(flag == 1) {
+        if (flag == 1) {
             const response = {
                 status: "failed",
                 message: "Anda sudah melakukan Presensi"
