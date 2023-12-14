@@ -186,7 +186,7 @@ app.post('/', express.json(), (req, res) => {
 
 
 app.get('/', (req, res) => {
-    const sql = `SELECT * FROM data_absensi`
+    const sql = `SELECT *  FROM data_absensi`
     res.header("Access-Control-Allow-Origin", "*")
     db.query(sql, (err, field) => {
         if (err)throw err
